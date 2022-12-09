@@ -18,4 +18,5 @@ public class Controller {
     test.add("lofoten");
     return test;
 }
+
 }
