@@ -14,8 +14,8 @@ $(()=>({
 function getRoutes(list) {
 
     for(let i = 0; i<list.length; i++){
-
+        $("#results").append(list[i]);
+        console.log(list);
     }
-    $("#results").append();
 //ajax call for the routes avaible
 }
