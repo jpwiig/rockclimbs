@@ -32,10 +32,13 @@ function getRoutes(list) {
     function TypeofGrade(grade){
 
         //get logic on place, then create in db
-        let gradestype = {
-            French : ["4a", "4b", "4c", "5a", "5b", "5c" ],
-            UIAA : ["IV", "IV+", "V", "V+"],
-            Yosemite : ["5.5","5.6","5.7", "5.8"]
+        let gradestype = [
+            { French : ["4a", "4b", "4c", "5a", "5b", "5c" ]},
+            {UIAA: ["IV", "IV+", "V", "V+"]},
+            {Yosemite: ["5.5", "5.6", "5.7", "5.8"]}
+        ]
+        if (grade === gradestype){
+            gradestype.forEach()
         }
     }
 //ajax call for the routes avaible
