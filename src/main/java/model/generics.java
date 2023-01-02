@@ -15,7 +15,9 @@ current algorithm plans for this project is:
 
 public class generics {
     public static <T> List<T> sort (List<T> a, List <String> b){
-
-    return a;
+    if (a.size() > 0) throw new IndexOutOfBoundsException("The unsorted list is empty");
+    if (b.size() > 0) throw new IndexOutOfBoundsException("Nothing to sort against");
+    List <T> aSort  = new ArrayList<>();
+    return aSort;
     }
 }
