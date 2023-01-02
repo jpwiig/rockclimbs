@@ -1,31 +1,36 @@
 CREATE TABLE users (
-                         "id" int PRIMARY KEY,
-                         "email" varchar,
-                         "username" varchar,
+                         "id" int PRIMARY KEY unique ,
+                         "email" varchar unique,
+                         "username" varchar unique,
                          "password" varchar,
                          "country" int
 );
 
 CREATE TABLE "countries" (
-                             "id" int PRIMARY KEY,
+                             "id" int PRIMARY KEY unique ,
                              "country" varchar unique,
                              "code" varchar unique,
                              "region" varchar unique
 );
 
 CREATE TABLE "route" (
-                         "id" int PRIMARY KEY,
+                         "id" int PRIMARY KEY unique,
                          "grade" varchar,
                          "countryCode" varchar,
-                         "users" varchar unique
+                         "users" varchar,
+                        "numberOfsavedRoutes" varchar
 );
 
 CREATE TABLE "grades" (
-                          "id" int PRIMARY KEY,
-                          "grading" varchar unique,
+                          "id" int PRIMARY KEY unique,
+                          "grading" varchar,
                           "gradesystem" varchar
 );
 
+CREATE TABLE gradestyle (
+    "id" int PRIMARY KEY unique,
+    "Name" varchar
+);
 CREATE TABLE "region" (
                           "id" int,
                           "reigon" varchar unique

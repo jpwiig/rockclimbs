@@ -43,7 +43,8 @@ function getRoutes(list) {
             }
         }
         let grades = document.getElementById("gradeName");
-        grades.style.visibility = 'visible'
+        grades.style.visibility = 'visible';
+        console.log(out)
         grades.append(out);
     }
 
