@@ -23,22 +23,33 @@ public class generics {
         k = j;
         j = temp;
     }
-    public static <T> List<T> sort (List<T> a, List <String> b){
+    public static <T> List<T> addWithCondition (List<T> a, List <String> b){
     //Array A must have a proprety of array B
+        //combine bubble and mergesort.
+        List <T> aSort  = new ArrayList<>();
     if (a.size() <= 0) throw new IndexOutOfBoundsException("The unsorted list is empty");
     if (b.size() <= 0) throw new IndexOutOfBoundsException("Nothing to sort against");
     else {
         int l = 0;
-    while(l < b.size()){
-        for(int i = 0; i < a.size(); i ++){
-            //if a[i] contains b[l]
+        while (l < b.size()) {
+            for (int i = 0; i < a.size(); i++) {
+                //if a[i] contains b[l], add it to the aSort
+
+                if (a.get(i).equals(b.get(l))) {
+                    aSort.add(a.get(i));
+                }
+
+            }
+            l++;
         }
-        l++;
     }
-    }
-    List <T> aSort  = new ArrayList<>();
+
 
     return aSort;
+    }
+    //sorting
+    public static <T> List <T> sort (List <T> list){
+
     }
 
 
