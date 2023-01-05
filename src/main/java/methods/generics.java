@@ -48,8 +48,9 @@ public class generics {
     return aSort;
     }
     //sorting
-    public static <T> List <T> sort (List <T> list){
-
+    public static <T> List <T> sort (ArrayList <T> list){
+        //compare stuff that contains inside the list
+return null;
     }
 
 

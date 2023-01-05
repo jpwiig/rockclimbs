@@ -1,4 +1,4 @@
-package repository;
+<package repository;
 
 import model.Route;
 import model.SavedRoutes;
@@ -16,7 +16,7 @@ import java.util.List;
 public class routeRepository {
    private JdbcTemplate db;
     public List<Route> searchForRoute(String search, HttpServletResponse response) throws IOException {
-        String sql ="SELECT * FROM where country = ?";
+        String sql ="SELECT * FROM countries where country = ?"; //Fix the damn server connection
         try{
             return db.query(sql, new BeanPropertyRowMapper<>(Route.class));
         } catch (Exception e){
