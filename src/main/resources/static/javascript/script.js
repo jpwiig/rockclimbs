@@ -2,6 +2,7 @@ let list;
 
 
 $(() => {
+    console.log("ready sire");
     /* $("#searchclk").click(() => {
          console.log("Lættis")
          $.get("/api/test/", (list) => {
@@ -23,6 +24,6 @@ $(() => {
 function printroutes(routes){
     let out;
     for(let i  of routes){
-        out += i.
+        out += "<option>" + i.name + i.grade + "</option>";
     }
 }
