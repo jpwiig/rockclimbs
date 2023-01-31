@@ -23,6 +23,7 @@ $(() => {
 
 function printroutes(routes){
     let out;
+    console.log("Routes: " + routes)
     for(let i  of routes){
         out += "<option>" + i.name + i.grade + "</option>";
     }
