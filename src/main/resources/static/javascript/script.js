@@ -1,11 +1,7 @@
 let list;
-let test
-$(() => {
-    let route = {
-        name : null,
-        grade : null,
 
-    }
+
+$(() => {
     console.log("ready sire");
     /* $("#searchclk").click(() => {
          console.log("Lættis")
@@ -14,19 +10,21 @@ $(() => {
          })
 
      })*/
-//test to make sure that everything is connected
+
     $("#ListOfPlaces").click(
-        //const i;
-        $.get("api/test/", test,() => {
-            console.log(test)
-          })
+
+        $.get("/api/test/", (routes) => {
+              getRoutes(routes)
+          }),
+        console.log("funk")
     )
 })
 
 
 function printroutes(routes){
     let out;
-    for(const i  of routes){
+    console.log("Routes: " + routes)
+    for(let i  of routes){
         out += "<option>" + i.name + i.grade + "</option>";
     }
 }

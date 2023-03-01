@@ -15,10 +15,10 @@ import java.util.List;
 @RestController
 
 public class Controller {
-/*    @Autowired
-    routeRepository rep;
-*/
-@GetMapping("api/test/")
+    @Autowired
+
+
+@PostMapping("api/test/")
     public List<String> test(){
     List<String>test = new ArrayList<>();
     test.add("colorado");
@@ -27,9 +27,9 @@ public class Controller {
     test.add("lofoten");
     return test;
 }
-//@GetMapping("/api/routes/")
-   // public List<Route> searchforRoute(String Search, HttpServletResponse response) throws IOException {
- //   return rep.searchForRoute(Search, response);
-//}
+@GetMapping("/api/routes/")
+    public List<Route> searchforRoute(String Search, HttpServletResponse response) throws IOException {
+   // return rep.searchForRoute(Search, response);
+}
 
 }
