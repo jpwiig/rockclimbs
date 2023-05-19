@@ -1,13 +1,10 @@
-package repository;
+package com.example.rockclimbs.repository;
 
-import model.Route;
-import model.SavedRoutes;
-import org.springframework.boot.autoconfigure.batch.BatchProperties;
+import com.example.rockclimbs.model.Route;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;

@@ -1,4 +1,4 @@
-package model;
+package com.example.rockclimbs.model;
 
 public class SavedRoutes {
     private int id;

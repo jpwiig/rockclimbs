@@ -1,4 +1,4 @@
-package methods;
+package com.example.rockclimbs.methods;
 
 import java.util.ArrayList;
 import java.util.Comparator;
